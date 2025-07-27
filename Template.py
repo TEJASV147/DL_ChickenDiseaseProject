@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-# ✅ Fix: lowercase 'level'
+
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 project_name = "CNN_Classifier"
@@ -19,9 +19,10 @@ list_of_files = [
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
-    "requirements.txt",  # ✅ Correct spelling here
+    "requirements.txt",  
     "setup.py",
-    "research/trials.ipynb"
+    "research/trials.ipynb",
+    "templates/index.html"
 ]
 
 for filepath in list_of_files:
